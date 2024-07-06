@@ -65,7 +65,7 @@ nav img {
 .nav-links ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 8px 25px;
   position: relative;
 }
 
@@ -75,3 +75,68 @@ nav img {
   font-size: 12px;
   font-family: 'Source-Regular'; /* Apply the custom font */
 }
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.main-text {
+  font-size: 120px;
+  font-family: 'Source-Bold'; 
+  color: var(--white)
+}
+
+.span-1 {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-family: 'Source-Regular';
+  font-size: 16px;
+  color: var(--white);
+}
+
+button {
+  background-color: var(--purple);
+  border: none;
+  border-radius: 50px;
+  color: var(--white);
+  font-size: 14px;
+  margin-top: 30px;
+  padding: 15px 15px;
+  cursor: pointer;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-text-1 h2 {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  font-size: 32px;
+  font-family: 'Source-Regular';
+  color: var(--white);
+}
+
+.purple {
+  color: var(--purple);
+}
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+.round img{
+  border-radius: 50%;
+}
+
