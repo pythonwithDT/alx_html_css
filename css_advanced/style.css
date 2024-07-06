@@ -1,0 +1,77 @@
+:root {
+  --white: #FFFFFF;
+  --purple: #C271FF;
+  --black: #000000;
+  --darkblue: #071629;
+}
+
+@font-face {
+  font-family: 'Source-Bold';
+  src: url(../Fonts/SourceSansPro-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Source-Regular';
+  src: url(../Fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+  font-family: Spincle-regular;
+  src: url(../Fonts/spincycle_ot.otf);
+}
+
+@font-face {
+  font-family: Spincle-bold;
+  src: url(../Fonts/spincycle_3d_ot.otf);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url(../assets/Object.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 12px;
+  font-family: 'Source-Regular'; /* Apply the custom font */
+}
