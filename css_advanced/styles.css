@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Source Sans Pro;
+}
+
+/* landing page starts here */
+
+
+.landing_page {
+    
+     width: 100%;
+     height: 100vh;
+     position: relative;
+}
+
+.landing_page .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-blend-mode: color;
+    background: #000000;
+    background: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.0001) 0%, #071629 100%);
+    
+}
+
+.landing_page_bgimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header {
+padding: 1.5rem 8rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    text-decoration: none;
+}
+li {
+    display: inline-block; 
+    margin-right: 2rem; 
+    text-decoration: none;
+}
+li:last-child {
+    margin-right: 0; 
+}
+
+a {
+    text-decoration: none; 
+    color: white;
+}
+
+.landing_page_options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.landing_page_options h1 {
+    font-size: 5rem;
+    color: white;
+}
+
+.landing_page_emotions {
+    display: flex;
+    gap: 1rem;
+    color: white;
+
+}
+
+.landing_page_pros_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.landing_page_pros_container h2 span {
+    color: #c271ff;
+    font-weight: bold;
+}
+
+.landing_page_pros_container h2 {
+    color: white;
+    font-weight: 300;
+}
+
+.landing_page_pros {
+    display: flex;
+    padding-bottom: 2rem;
+    align-items: center;
+    gap: 3rem;
+}
+
+.landing_page_pronames {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+}
+
+.landing_page_pronames img {
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.landing_page_pronames h3 {
+    font-size: 1rem;
+    color: white;
+    margin: .5rem 0;
+    height: 2rem;
+}
+
+.landing_page_pronames p {
+    color: white;
+    font-size: .8rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
+/* landing page ends here */
+
+/* Presenter section starts here */
+
+.presenter_section {
+    background-color: #c271ff;
+    padding: 2.5rem 10rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.presenter_image img {
+    width: 6.5rem;
+}
+
+.presenter_quote {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.presenter_quote blockquote {
+    font-size: .9rem;
+}
+
+.presenter_quote h3 {
+    font-size: .9rem;
+}
+
+.presenter_quote p {
+    font-style: italic;
+}
+
+/* Presenter section ends here */
+
+/* tutorials_section starts here */
+.tutorials_section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 7rem;
+}
+
+.tutorials_section h2 span{
+    color: rgba(194, 113, 255, 1);
+    text-align: center;
+    font-weight: bold;
+}
+
+.tutorials_container {
+    display: flex;
+    gap: 2rem;
+}
+
+.tutorials_section h2 {
+    text-align: center;
+    font-weight: 100;
+}
+
+.tutorials_content{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.tutorials_images{
+    width: 100%;
+    position: relative;
+}
+
+.tutorials_images .tutorials_banner {
+    width: 100%;
+}
+
+.tutorials_images .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 2rem;
+    width: 2rem;
+}
+
+.tutorials_content_details {
+    padding: .7rem;
+}
+
+.tutorials_content_details h3 {
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.tutorials_content_details p {
+    font-size: .7rem;
+    font-weight: lighter;
+    color: rgba(7, 22, 41, 0.5);
+    ;
+}
+
+.tutorials_commentator {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: .5rem 0
+}
+
+.tutorials_commentator img {
+    width: 1.5rem;
+}
+
+.tutorials_commentator h4 {
+    color: rgba(194, 113, 255, 1);
+    font-size: .7rem;
+}
+
+.tutorials_rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tutorials_rating_icon .fa_grey{
+    color: rgba(216, 216, 216, 1);
+    ;
+}
+
+.tutorials_rating_icon i {
+    font-size: .6rem;
+    color: rgba(194, 113, 255, 1);
+}
+
+.tutorials_rating p {
+    color: rgba(194, 113, 255, 1);
+}
+
+
+/* tutorials section ends here */
+
+/* membership_section starts here */
+.membership_section {
+    background-color: rgba(7, 22, 41, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 8rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+.membership_section h2 {
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+
+.membership_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.membership_section h2 span {
+    text-align: center;
+    color: #c271ff;
+    font-weight: bold;
+}
+
+.membership{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.membership h3 {
+    color: white;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.membership p {
+    text-align: center;
+    color: white;
+    font-size: .7rem;
+    font-weight: 300;
+
+}
+
+.register_button {
+    background-color: #c271ff;
+    width: 7rem;
+    border-radius: 50rem;
+    font-size: .5rem;
+    color: white;
+    padding: .7rem .5rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* membership_section ends here */
+
+/* FAQ section starts here */
+.faq_section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 10rem;
+}
+
+.faq_section h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 75.42px;
+}
+
+.faq_content_container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.faq_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq_content_info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq_content_info p {
+    color: rgba(7, 22, 41, 0.5);
+    font-size: .8rem;
+    
+}
+/* FAQ section ends here */
+
+
+/* Footer Starts Here */
+footer {
+
+    background-color: rgba(7, 22, 41, 1);
+    width: 100%;
+    display: flex;
+
+}
+
+.footer_section {
+    padding: 2rem 6rem;
+    width: 100%;
+}
+
+.socialmedia_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.social_icons {
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+.fa-brands {
+    color: white;
+}
+
+.footer_section p {
+    color: rgb(70, 64, 64);
+    font-size: .8rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* Footer Ends Here */
