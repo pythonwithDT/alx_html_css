@@ -1,1 +1,0 @@
-# Get Schooled Project
