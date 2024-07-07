@@ -16,6 +16,11 @@
 }
 
 @font-face {
+  font-family: 'Source-light';
+  src: url(../Fonts/SourceSansPro-Light.otf);
+}
+
+@font-face {
   font-family: Spincle-regular;
   src: url(../Fonts/spincycle_ot.otf);
 }
@@ -36,15 +41,17 @@ html, body {
   margin: 0;
 }
 
-body {
+.background {
+  min-width: 100vh;
+  width: 100%;
   background-image: url(../assets/Object.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
+
+
 
 nav {
   display: flex;
@@ -80,9 +87,10 @@ nav img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
+  height: 250px;
 } 
 
 .main-text {
@@ -117,7 +125,7 @@ button {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 150px;
+  margin-top: 80px;
   font-size: 32px;
   font-family: 'Source-Regular';
   color: var(--white);
@@ -130,13 +138,61 @@ button {
 .profiles {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
-
+  gap: 100px;
+  margin-top: 30px;
 }
 
-.round img{
+.profile {
+  text-align: center;
+  max-width: 150px;
+}
+
+.p-text {
+  font-family: "Source-Regular";
+  color: var(--white);
+  font-size: 18px;
+}
+
+.p-text2 {
+  font-style: italic;
+  font-family: "Source-Light";
+  color: var(--white);
+  font-size: 16px;
+}
+
+.profile img{
   border-radius: 50%;
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 20px;
+  padding: 80px 200px;
+  background-color: var(--purple);
+}
+
+.container img {  
+  margin-right: 40px;
+}
+
+.container blockquote {
+  color: var(--white);
+  font-family: 'Source-light';
+  font-size: 22px;
+}
+
+.container h3 {
+  color: var(--white);
+  margin-top: 20px;
+  font-family: 'Source-Regular';
+}
+
+.container p {
+  color: var(--white);
+  margin-top: 10px;
+  font-family: 'Source-Light';
+  font-style: italic;
 }
 
