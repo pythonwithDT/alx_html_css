@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* our results styling starts here */
+.ourresults_section {
+    width: 100%;
+    position: relative;
+    height: 30rem;
+}
+
+.results_container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+
+.results_container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.results_page_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #0000001c, #071629);
+}
+
+.results_container_content {
+    color: white;
+    padding: 2rem 4rem;
+}
+
+.results_container_content p {
+    text-align: center;
+    color: rgb(177, 170, 168);
+}
+
+.results_page_overlay h2 {
+    color: white;
+}
+
+.results_polygon {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.polygon {
+    width: 17%;
+    position: relative;
+    padding: 0rem 2.5rem;
+
+}
+
+.polygon img {
+    width: 100%;
+}
+
+.polygon_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.polygon_content p {
+    font-size: .7rem;
+    text-align: center;
+    margin-top: .3rem;
+}
+
+.polygon_content h1 {
+    text-align: center;
+    font-size: 2.5rem
+}
+
+@media screen and (max-width:480px) {
+    .results_polygon  {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .polygon {
+        width: 30%;
+    }
+    .ourresults_section {
+        height: 100vh;
+    }  
+    .results_container img {
+        height: 100%;
+        object-fit: cover;
+    }  
+}
+
+/* results styling ends here */
