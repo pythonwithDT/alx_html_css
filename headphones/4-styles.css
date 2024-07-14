@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Footer styling  starts here */
+footer {
+    background-color: #071629;
+    width: 100%;
+    display: flex;
+}
+
+.footer_section {
+    padding: 3rem 8rem;
+    width: 100%;
+}
+
+.footer_section p {
+    color: rgb(70, 64, 64);
+    font-size: .8rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.footer_section img {
+    width: 20%;
+    padding: .5rem;
+}
+
+.socialmedia_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.fa-brands {
+    color: white;
+    padding: .4rem;
+}
+
+@media screen and (max-width:480px){
+    .socialmedia_section {
+        flex-direction: column;
+    }
+    .footer_section img {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Footer styling  ends here */
